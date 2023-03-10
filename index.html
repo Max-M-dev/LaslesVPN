@@ -5,10 +5,345 @@
 		<!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>LaslesVpn</title>
+		<link rel="stylesheet" href="./src/css/lib/fontawesome/css/all.min.css" />
+		<link rel="stylesheet" href="./node_modules/swiper/modules/pagination/pagination.scss"/>
 		<link rel="stylesheet" href="./src/scss/main.scss" />
+		
 	</head>
 	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/index.tsx"></script>
+		<!-- <div id="root"></div> -->
+		<div class="wrapper">
+			<header class="header header-container">
+				<div class="header__logo logo">
+					<img class="img-responsive" src="./public/assets/logo.png" alt="logo" />
+				</div>
+				<nav id="menu" class="header__menu none">
+				<ul class="menu">
+					<li class="menu__item"><a href="">About</a></li>
+					<li class="menu__item"><a href="">Features</a></li>
+					<li class="menu__item"><a href="">Pricing</a></li>
+					<li class="menu__item"><a href="">Testimonials</a></li>
+					<li class="menu__item"><a href="">Help</a></li>
+				</ul>
+			</nav>
+				<div class="header__login">
+					<a href="#" class="bold">Sing in</a>
+					<a href="#" class="btn-radius-invert">sing up</a>
+				</div>
+				<div id="menu-btn" class="header__menu-btn menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</header>
+			<main>
+				<div class="welcome welcome-container">
+					<div class="welcome__content">
+						<h1 class="welcome__title h1">
+							Want anything to be easy with <span class="bold">LaslesVPN.</span>
+						</h1>
+						<p class="welcome__description">
+							Provide a network for all your needs with ease and fun using
+							LaslesVPN discover interesting features from us.
+						</p>
+						<a href="#" class="btn-default btn-shadow">get started</a>
+					</div>
+				</div>
+				<div class="our-stat-container">
+					<div class="our-stat" >
+					<ul class="our-stat__list">
+						<li class="our-stat__item">
+							<div class="item-our-stat">
+								<div class="item-our-stat__icon">
+									<i class="fa fa-solid fa-user"></i>
+								</div>
+								<div class="item-our-stat__content">
+									<div class="item-our-stat__count bold">90</div>
+									<div class="item-our-stat__entity">user</div>
+								</div>
+							</div>
+						</li>
+						<li class="our-stat__item">
+							<div class="item-our-stat">
+								<div class="item-our-stat__icon">
+									<svg class="icon" viewBox="0 0 395.71 395.71">
+										<g>
+											<path
+												d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+		c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+		C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+		c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"
+											/>
+										</g>
+									</svg>
+								</div>
+								<div class="item-our-stat__content">
+									<div class="item-our-stat__count bold">30</div>
+									<div class="item-our-stat__entity">Locations</div>
+								</div>
+							</div>
+						</li>
+						<li class="our-stat__item">
+							<div class="item-our-stat">
+								<div class="item-our-stat__icon">
+									<i class="fa fa-solid fa-server"></i>
+								</div>
+								<div class="item-our-stat__content">
+									<div class="item-our-stat__count bold">50</div>
+									<div class="item-our-stat__entity">servers</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+				<div class="provide provide-container">
+					<div class="provide__content-wrapper">
+						<div class="provide__content">
+							<h2 class="provide__title h2">
+								We Provide Many Features You Can Use
+							</h2>
+							<p class="provide__description">
+								You can explore the features that we provide with fun and have
+								their own functions each feature.
+							</p>
+							<ul class="provide__list">
+								<li class="provide__item">Powerfull online protection.</li>
+								<li class="provide__item">Internet without borders.</li>
+								<li class="provide__item">Supercharged VPN</li>
+								<li class="provide__item">No specific time limits.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="plan">
+					<div class="plan-container plan__container">
+						<h2 class="plan__title h2">Choose Your Plan</h2>
+						<p class="plan__description">
+							Let's choose the package that is best for you and explore it
+							happily and cheerfully.
+						</p>
+						<div class="plan__content">
+							<ul class="plan__list plan-list">
+								<li class="plan-list__item">
+									<div class="plan-list__info-product info-product">
+										<div class="info-product__img">
+											<img class="img-responsive" src="./public/assets/img-plan.png" alt="" />
+										</div>
+										<h3 class="info-product__title">free plan</h3>
+										<ul class="info-product__list">
+											<li class="info-product__item">Unlimited Bandwitch</li>
+											<li class="info-product__item">Encrypted Connection</li>
+											<li class="info-product__item">No Traffic Logs</li>
+											<li class="info-product__item">Works on All Devices</li>
+										</ul>
+									</div>
+									<div class="plan-list__block-select">
+										<div class="plan-list__price">free</div>
+										<a href="#" class="plan-list__btn-select btn-radius-invert"
+											>select</a
+										>
+									</div>
+								</li>
+
+								<li class="plan-list__item">
+									<div class="plan-list__info-product info-product">
+										<div class="info-product__img">
+											<img class="img-responsive" src="./public/assets/img-plan.png" alt="" />
+										</div>
+										<h3 class="info-product__title">Standard Plan</h3>
+										<ul class="info-product__list">
+											<li class="info-product__item">Unlimited Bandwitch</li>
+											<li class="info-product__item">Encrypted Connection</li>
+											<li class="info-product__item">No Traffic Logs</li>
+											<li class="info-product__item">Works on All Devices</li>
+										</ul>
+									</div>
+									<div class="plan-list__block-select">
+										<div class="plan-list__price" data-period="/ mo">$9</div>
+										<a href="#" class="plan-list__btn-select btn-radius-invert"
+											>select</a
+										>
+									</div>
+								</li>
+
+								<li class="plan-list__item">
+									<div class="plan-list__info-product info-product">
+										<div class="info-product__img">
+											<img class="img-responsive" src="./public/assets/img-plan.png" alt="" />
+										</div>
+										<h3 class="info-product__title">Premium Plan</h3>
+										<ul class="info-product__list">
+											<li class="info-product__item">Unlimited Bandwitch</li>
+											<li class="info-product__item">Encrypted Connection</li>
+											<li class="info-product__item">No Traffic Logs</li>
+											<li class="info-product__item">Works on All Devices</li>
+										</ul>
+									</div>
+									<div class="plan-list__block-select">
+										<div class="plan-list__price" data-period="/ mo">$12</div>
+										<a href="#" class="plan-list__btn-select btn-radius-invert"
+											>select</a
+										>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="location location-container">
+					<div class="location__title h2">Huge Global Network of Fast VPN</div>
+					<p class="location__description">
+						See LaslesVPN everywhere to make it easier for you when you move
+						locations.
+					</p>
+					<div class="location__content">
+						<div class="location__map map">
+							<img class="map__img" src="./public/assets/map.png" alt="map" />
+							<div
+								class="map__point"
+								data-x="50%"
+								data-y="25"
+								data-content="test"
+							><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="10 0 38 38" fill="none">
+								<circle cx="29.4497" cy="19.1963" r="14.0949" fill="white" stroke="#F53838" stroke-width="2.64681"/>
+								<circle cx="29.4492" cy="19.1967" r="6.75825" fill="#F53838"/>
+								</svg></div>
+						</div>
+					</div>
+				</div>
+				</div>
+	
+ <div class="company company-container">
+	<div id="root-company-slider"></div>
+					
+				</div>
+				<div class="feedback feedback-container">
+				<!-- <div class="feedback"> -->
+					<h2 class="feedback__title h2">
+						Trusted by Thousands of Happy Customer
+					</h2>
+					<p class="feedback__description">
+						These are the stories of our customers who have joined us with great
+						pleasure when using this crazy feature.
+					</p>
+					<div class="feedback__content">
+					<div id="root-feedback-slider"></div>
+					</div>
+				</div>
+				<div class="action-subscribe">
+					<div class="action-subscribe-container">
+
+						<div class="action-subscribe__container">
+						<div class="action-subscribe__header">
+						<h3 class="action-subscribe__title h2">
+							Subscribe Now for Get Special Features!
+						</h3>
+						<div class="action-subscribe__decription">
+							Let's subscribe with us and find the fun.
+						</div>
+					</div>
+						<a href="#" class="action-subscribe__btn btn-default btn-shadow"
+							>Subscribe Now</a
+						>
+					</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer-container">
+					<div class="footer__wrapper">
+						
+						<div class="footer__lists-menu">
+
+							<div class="list-menu">
+								<h2 class="list-menu__title bold">Product</h2>
+								<ul class="list-menu__ul">
+									<li class="list-menu__li"><a href="" class="list-menu__link">download</a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">Pricing</a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">Locations</a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">Server</a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">Countries</a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">Blog</a></li>
+								</ul>
+							</div>
+
+							<div class="list-menu">
+								<h2 class="list-menu__title bold">Engage</h2>
+								<ul class="list-menu__ul">
+									<li class="list-menu__li"><a href="" class="list-menu__link">LaslesVPN ? </a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">FAQ</a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">Tutorials</a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">About Us</a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">Privacy Policy</a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">Terms of Service</a></li>
+								</ul>
+							</div>
+
+							<div class="list-menu">
+								<h2 class="list-menu__title bold">Earn Money</h2>
+								<ul class="list-menu__ul">
+									<li class="list-menu__li"><a href="" class="list-menu__link">Affiliate</a></li>
+									<li class="list-menu__li"><a href="" class="list-menu__link">Become Partner</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="footer__about about-footer">
+							<div class="about-footer__logo logo"><img src="./public/assets/logo.png" alt="logo" /></div>
+							<p class="about-footer__description"><b>LaslesVPN</b> is a private virtual network that has unique features and has high security.</p>
+							<div class="about-footer__social">
+								<!-- https://ru.stackoverflow.com/questions/526539/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-svg-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-object -->
+								
+								
+								<!-- <object type="image/svg+xml" data="myImage.svg" width="80"></object> -->
+								<a href="https://facebook.com" target="rel" class="social-button">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+									viewBox="0 0 310 310" xml:space="preserve">
+							 
+								 <path d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+									 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+									 V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+									 C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+									 c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+							 
+							 </svg></a>
+								<a href="https://twiter.com" target="rel" class="social-button icon-twiter">
+									<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M11.919 24.94c-2.548 0-4.921-.747-6.919-2.032a9.049 9.049 0 0 0 6.681-1.867 4.512 4.512 0 0 1-4.215-3.137c.276.054.559.082.848.082.412 0 .812-.056 1.193-.156a4.519 4.519 0 0 1-3.622-4.425v-.059a4.478 4.478 0 0 0 2.042.564 4.507 4.507 0 0 1-2.008-3.758c0-.824.225-1.602.612-2.268a12.811 12.811 0 0 0 9.303 4.715 4.517 4.517 0 0 1 7.692-4.115 9.107 9.107 0 0 0 2.866-1.094 4.542 4.542 0 0 1-1.983 2.498 9.08 9.08 0 0 0 2.592-.71 9.283 9.283 0 0 1-2.252 2.337c.008.193.014.388.014.583-.001 5.962-4.542 12.843-12.844 12.842"/></svg>
+								</a>
+								<a href="https://instagram.com" target="rel" class="social-button">
+									<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+										<path d="M480,0H32A31.981,31.981,0,0,0,0,32V480a31.981,31.981,0,0,0,32,32H480a31.981,31.981,0,0,0,32-32V32A31.981,31.981,0,0,0,480,0ZM192,256s5.062-64,64-64,64,64,64,64,1.844,64-64,64S192,256,192,256ZM448,448H64V224h68.531a128.013,128.013,0,1,0,246.938,0H448Zm0-288H352V64h96Z" fill-rule="evenodd"/>
+									</svg>
+								</a>
+							</div>
+							<div class="about-footer__copyrigth">©2020LaslesVPN</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script defer type="text/javascript">
+			/* MENU MOBILE */
+			const menuBtn = document.getElementById("menu-btn");
+			const menu = document.getElementById("menu");
+			if(window.innerWidth > 1023){
+				menu.classList.remove("none");
+			}
+			menuBtn.addEventListener("click",(el)=>{
+				const classNameForBtnOpen = "menu-btn-opened";
+				const classNameForMenuOpen = "none";
+				const isOpenMenu = menuBtn.classList.contains(classNameForBtnOpen);
+				if(isOpenMenu){
+					menuBtn.classList.remove(classNameForBtnOpen);
+					menu.classList.add(classNameForMenuOpen);
+				}else{
+					menu.classList.remove(classNameForMenuOpen);
+					menuBtn.classList.add(classNameForBtnOpen);
+				}
+			});
+		</script>
+		<script type="module" src="./src/js/company.jsx"></script>
+		<script type="module" src="./src/js/feedback.jsx"></script>
 	</body>
 </html>

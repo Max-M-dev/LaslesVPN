@@ -1,0 +1,6 @@
+@use "sass:math";
+@import "vars";
+@function rem($value) {
+	$remValue: (math.div($value * 10, $baseFontSize)) * 1rem;
+	@return $remValue;
+}

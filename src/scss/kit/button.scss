@@ -1,0 +1,54 @@
+@import "../vars";
+@import "../func";
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	text-transform: capitalize;
+	border: none;
+	outline: none;
+	transition: 0.5s;
+	&:visited {
+		text-decoration: none;
+	}
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+.btn-default {
+	@extend .btn;
+	background: $accent;
+	color: white;
+	padding: rem(1.7) rem(5);
+	border-radius: rem(1);
+	min-width: rem(25);
+	min-height: rem(6);
+	text-align: center;
+	line-height: rem(2.5);
+}
+
+.btn-radius-base {
+	@extend .btn;
+	border-radius: rem(5);
+	padding: rem(1.3) rem(4.5);
+}
+
+.btn-radius-default {
+	@extend .btn-radius-base;
+	background: $accent;
+	color: white;
+}
+.btn-radius-invert {
+	@extend .btn-radius-base;
+	border: rem(0.1) solid $accent;
+	color: $accent;
+	background-color: white;
+}
+
+.btn-shadow {
+	box-shadow: 0px rem(2) rem(5) rem(-1.2) rgb(245 56 56);
+	&:hover {
+		box-shadow: 0px rem(1) rem(5) rem(-1.2) rgb(105 56 56);
+	}
+}
